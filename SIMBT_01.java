@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TicTacToe extends JFrame implements ActionListener {
+public class SIMBT_01 extends JFrame implements ActionListener {
     private JButton[][] buttons;
     private char[][] board;
     private char currentPlayer;
@@ -15,7 +15,7 @@ public class TicTacToe extends JFrame implements ActionListener {
     private JLabel xWinsLabel;
     private JLabel oWinsLabel;
 
-    public TicTacToe() {
+    public SIMBT_01() {
         setTitle("Tic Tac Toe");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -200,7 +200,7 @@ public class TicTacToe extends JFrame implements ActionListener {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new TicTacToe();
+                new SIMBT_01();
             }
         });
     }
